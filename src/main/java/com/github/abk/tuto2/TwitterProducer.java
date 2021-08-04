@@ -58,6 +58,17 @@ public class TwitterProducer {
         //Create a kafka producer
         KafkaProducer<String, String > producer = createKafkaProducer();
 
+        // Add a shutdown hook
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            logger.info("Stopping application....");
+            logger.info("shutting down client from twitter....");
+            client.stop();
+            logger.info("closing producer....");
+            producer.close();
+            logger.info("done!");
+
+        }));
+
 
 
 
