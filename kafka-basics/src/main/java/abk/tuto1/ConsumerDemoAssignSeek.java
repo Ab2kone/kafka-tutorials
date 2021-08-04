@@ -1,4 +1,4 @@
-package com.github.abk.tuto1;
+package abk.tuto1;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
