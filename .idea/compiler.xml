@@ -10,6 +10,7 @@
         <module name="kafka-connect" />
         <module name="kafka-consumer-elasticsearch" />
         <module name="kafka-basics" />
+        <module name="kafka-streams-filter-tweets" />
       </profile>
     </annotationProcessing>
   </component>
